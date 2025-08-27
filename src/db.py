@@ -13,11 +13,7 @@ DB_DRIVER = "asyncpg"
 DB_URL = f"postgresql+{DB_DRIVER}://{DB_USER}:{DB_PASSWORD}@{DB_HOST}/{DB_NAME}"
 
 engine: AsyncEngine = create_async_engine(
-    DB_URL,
-    pool_size=10,
-    pool_timeout=30,
-    pool_recycle=1800,
-    echo=True
+    DB_URL, pool_size=10, pool_timeout=30, pool_recycle=1800, echo=True
 )
 
 session = AsyncSession(engine)

@@ -21,11 +21,12 @@ dependencies = [
 ]
 
 [tool.poetry]
-packages = [{include = "fastapi_crud_demo", from = "src"}]
+packages = [{include = "src"}]
 
 
 [tool.poetry.group.dev.dependencies]
 isort = "^6.0.1"
+black = "^25.1.0"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]

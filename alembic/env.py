@@ -9,11 +9,13 @@ if config.config_file_name is not None:
 
 
 from dotenv import load_dotenv
+
 load_dotenv()
 
-import src.models 
+import src.models
 
 from sqlmodel import SQLModel
+
 target_metadata = SQLModel.metadata
 
 import os
@@ -67,4 +69,3 @@ if context.is_offline_mode():
     run_migrations_offline()
 else:
     run_migrations_online()
-
