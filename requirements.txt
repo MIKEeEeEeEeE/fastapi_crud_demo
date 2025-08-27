@@ -1,0 +1,10 @@
+fastapi==0.116.1
+PyJWT==2.10.1
+python-dotenv==1.1.1
+returns==0.26.0
+SQLAlchemy==2.0.43
+sqlmodel==0.0.24
+uvicorn==0.35.0
+asyncpg==0.30.0
+python-multipart==0.0.20
+alembic==1.16.4
